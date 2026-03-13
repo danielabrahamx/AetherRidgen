@@ -73,12 +73,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.85) 40%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.85) 40%,
+      rgba(0, 0, 0, 0.95) 100%);
   z-index: -1;
 }
 
@@ -266,12 +264,11 @@ header {
 }
 
 .logo img {
-  height: 60px;
-  /* Slightly larger for impact */
+  height: 55px;
   width: auto;
   object-fit: contain;
-  transform: translateX(-10px);
-  /* Nudge even tighter to the left corner */
+  filter: invert(1);
+  opacity: 0.9;
 }
 
 nav.desktop-nav a {
@@ -326,6 +323,47 @@ nav.desktop-nav a:not(.btn):hover {
 
 .mobile-menu {
   display: none;
+}
+
+/* Brand Splash Section */
+.brand-splash {
+  position: relative;
+  height: 100vh;
+  padding-top: 90px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-splash-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-logo {
+  width: 90%;
+  max-width: 900px;
+  max-height: 75vh;
+  object-fit: contain;
+  height: auto;
+  display: block;
+  filter: invert(1);
+  opacity: 0.85;
+  animation: splashFadeIn 2s ease forwards;
+}
+
+@keyframes splashFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.85;
+  }
 }
 
 /* Hero Section */
@@ -634,8 +672,7 @@ footer {
   }
 
   .logo img {
-    height: 45px;
-    transform: translateX(-5px);
+    height: 42px;
   }
 
   .logo,
