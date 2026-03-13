@@ -1,382 +1,325 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Aether Rigden Consultants | Specialist Façade Cost Consultancy
-    </title>
-    <meta
-      name="description"
-      content="Aether Rigden Consultants provides specialist façade cost consultancy and pre construction support for main contractors, architects, and developers."
-    />
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header-container nav-container">
-        <div class="logo">
-          <img
-            src="assets/RidgenLogoNew.jpg"
-            alt="Aether Rigden Consultants"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Aether Rigden Consultants | Specialist Façade Cost Consultancy
+  </title>
+  <meta name="description"
+    content="Aether Rigden Consultants provides specialist façade cost consultancy and pre construction support for main contractors, architects, and developers." />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container nav-container">
+      <div class="logo">
+        <img src="assets/RidgenLogoNew.jpg" alt="Aether Rigden Consultants" />
+      </div>
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-arc">Why ARC</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+        <div class="hamburger"></div>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#services" onclick="toggleMobileMenu()">Services</a>
+        <a href="#why-arc" onclick="toggleMobileMenu()">Why ARC</a>
+        <a href="#contact" class="btn btn-primary" onclick="toggleMobileMenu()">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Global Background -->
+    <div class="global-bg">
+      <img src="assets/IMG_6098.JPEG" alt="Modern facade architecture" class="bg-image" />
+      <div class="global-overlay"></div>
+    </div>
+
+    <!-- Brand Splash Section -->
+    <section class="brand-splash">
+      <div class="brand-splash-content">
+        <img src="assets/RidgenLogoNew.jpg" alt="Aether Rigden Consultants" class="splash-logo" />
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1 class="reveal-text">Precision in Façade Cost Planning</h1>
+        <p class="fade-in">
+          Aether Rigden Consultants provides specialist façade cost
+          consultancy and pre-construction support for main contractors,
+          architects, and developers.
+        </p>
+        <div class="hero-actions fade-in-delay">
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
         </div>
-        <nav class="desktop-nav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#why-arc">Why ARC</a>
-          <a href="#contact" class="btn btn-outline">Contact Us</a>
-        </nav>
-        <button
-          class="mobile-toggle"
-          aria-label="Toggle menu"
-          onclick="toggleMobileMenu()"
-        >
-          <div class="hamburger"></div>
-        </button>
       </div>
+    </section>
 
-      <!-- Mobile Menu Overlay -->
-      <div class="mobile-menu" id="mobile-menu">
-        <nav class="mobile-nav">
-          <a href="#about" onclick="toggleMobileMenu()">About</a>
-          <a href="#services" onclick="toggleMobileMenu()">Services</a>
-          <a href="#why-arc" onclick="toggleMobileMenu()">Why ARC</a>
-          <a
-            href="#contact"
-            class="btn btn-primary"
-            onclick="toggleMobileMenu()"
-            >Contact Us</a
-          >
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- Global Background -->
-      <div class="global-bg">
-        <img
-          src="assets/IMG_6098.JPEG"
-          alt="Modern facade architecture"
-          class="bg-image"
-        />
-        <div class="global-overlay"></div>
-      </div>
-
-      <!-- Brand Splash Section -->
-      <section class="brand-splash">
-        <div class="brand-splash-content">
-          <img
-            src="assets/RidgenLogoNew.jpg"
-            alt="Aether Rigden Consultants"
-            class="splash-logo"
-          />
-        </div>
-      </section>
-
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="container hero-content">
-          <h1 class="reveal-text">Precision in Façade Cost Planning</h1>
-          <p class="fade-in">
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container grid-2-col align-center">
+        <div class="about-text glass-panel">
+          <h2 class="section-title">Bridging Design Intent & Cost Reality</h2>
+          <p>
             Aether Rigden Consultants provides specialist façade cost
             consultancy and pre-construction support for main contractors,
-            architects, and developers.
+            architects, and developers. We focus on the commercial and
+            technical aspects of façade systems, helping project teams ensure
+            façade designs are deliverable, commercially viable, and aligned
+            with project budgets.
           </p>
-          <div class="hero-actions fade-in-delay">
-            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section about-section">
-        <div class="container grid-2-col align-center">
-          <div class="about-text glass-panel">
-            <h2 class="section-title">Bridging Design Intent & Cost Reality</h2>
-            <p>
-              Aether Rigden Consultants provides specialist façade cost
-              consultancy and pre-construction support for main contractors,
-              architects, and developers. We focus on the commercial and
-              technical aspects of façade systems, helping project teams ensure
-              façade designs are deliverable, commercially viable, and aligned
-              with project budgets.
-            </p>
-            <p>
-              Our deep expertise across early design stages and tender
-              development allows us to provide insight where cost certainty is
-              most valuable.
-            </p>
-          </div>
-          <div class="about-image image-reveal">
-            <img src="assets/IMG_6106.JPEG" alt="Close up facade detail" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Section -->
-      <section id="services" class="section services-section bg-alt">
-        <div class="container">
-          <h2 class="section-title text-center">Specialist Services</h2>
-          <div class="services-grid">
-            <div class="service-card">
-              <div class="service-icon">01</div>
-              <h3>Façade Cost Consultancy</h3>
-              <p>
-                Commercial advice for fenestration systems, External Rainscreen
-                systems and complex cladding architectures.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">02</div>
-              <h3>Pre-Construction Estimating</h3>
-              <p>
-                Feasibility budgets and early-stage cost planning to guide
-                design evolution. Technical advice on what products and systems
-                suit project design and purpose.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">03</div>
-              <h3>Tender Support</h3>
-              <p>
-                Subcontractor pricing reviews and detailed commercial
-                comparisons. Assist with inclusions on early design stage to
-                avoid scope gaps when forming budgets.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">04</div>
-              <h3>Recladding & Remediation</h3>
-              <p>
-                Specialist cost planning for façade replacement and safety works
-                programmes.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">05</div>
-              <h3>Budget Cost Planning</h3>
-              <p>
-                Façade system benchmarking, value engineering, and detailed cost
-                modelling.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">06</div>
-              <h3>Scope Quantity/Item Take-Offs</h3>
-              <p>
-                ARC delivers detailed façade measurement and item schedules to
-                support accurate take-offs. By identifying elements often missed
-                during early estimating, we provide clear quantities and a
-                comprehensive façade component list.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">07</div>
-              <h3>ARC Façade Tender Proposal Pack</h3>
-              <p>
-                Includes: full take-off, item schedule, risk notes, value
-                engineering opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why ARC Section -->
-      <section id="why-arc" class="section why-section">
-        <div class="container grid-2-col reverse-mobile">
-          <div class="why-image image-reveal">
-            <img src="assets/IMG_6115.JPEG" alt="Architectural texture" />
-          </div>
-          <div class="why-text glass-panel">
-            <h2 class="section-title">The ARC Advantage</h2>
-            <ul class="feature-list">
-              <li>
-                <strong>Specialist Façade Expertise</strong>
-                <span
-                  >Deep technical knowledge of high-performance building
-                  envelopes.</span
-                >
-              </li>
-              <li>
-                <strong>Supply Chain Insight</strong>
-                <span
-                  >Strong understanding of global façade supply chains and
-                  pricing structures.</span
-                >
-              </li>
-              <li>
-                <strong>Independent Advice</strong>
-                <span
-                  >Objective, unbiased consultancy advice tailored to your
-                  project.</span
-                >
-              </li>
-              <li>
-                <strong>Pre-Construction Focus</strong>
-                <span
-                  >Dedicated to the stages where cost certainty and risk
-                  mitigation are most valuable.</span
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Clients Section -->
-      <section class="section clients-section bg-alt">
-        <div class="container text-center">
-          <h2 class="section-title">Who We Work With</h2>
-          <p class="max-w-m mx-auto">
-            ARC works with main contractors, architects, developers, project
-            managers, and design teams across commercial developments,
-            residential towers, and façade remediation programmes.
+          <p>
+            Our deep expertise across early design stages and tender
+            development allows us to provide insight where cost certainty is
+            most valuable.
           </p>
-          <div class="client-images">
-            <!-- We can use the remaining images here as a gallery or background aesthetic -->
-            <img
-              src="assets/IMG_6129.JPEG"
-              alt="Project 1"
-              class="gallery-img"
-            />
-            <img
-              src="assets/IMG_6179.JPEG"
-              alt="Project 2"
-              class="gallery-img"
-            />
-          </div>
         </div>
-      </section>
-
-      <!-- Contact Section with HTMX -->
-      <section id="contact" class="section contact-section">
-        <div class="container grid-2-col">
-          <div class="contact-info glass-panel">
-            <h2 class="section-title">Discuss Your Project</h2>
-            <p>
-              Get in touch to learn how our specialist façade consultancy can
-              add value to your next development.
-            </p>
-            <div class="contact-details">
-              <a href="mailto:info@aetherridgen.uk" class="contact-link"
-                >info@aetherridgen.uk</a
-              >
-            </div>
-          </div>
-          <div class="contact-form-wrapper">
-            <form id="contact-form" onsubmit="sendEmail(event)">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder="John Doe"
-                />
-              </div>
-              <div class="form-group">
-                <label for="company">Company</label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  placeholder="Company Name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  required
-                  placeholder="Tell us about your project..."
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                <span class="btn-text">Open in Mail Client</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-logo">
-          <span style="font-weight: 700; color: white">ARC</span>
-        </div>
-        <div class="footer-links">
-          <p>&copy; 2026 Aether Rigden Consultants Ltd. All rights reserved.</p>
+        <div class="about-image image-reveal">
+          <img src="assets/IMG_6106.JPEG" alt="Close up facade detail" />
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Simple observer for scroll animations -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-              }
-            });
-          },
-          { threshold: 0.1 },
+    <!-- Services Section -->
+    <section id="services" class="section services-section bg-alt">
+      <div class="container">
+        <h2 class="section-title text-center">Specialist Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">01</div>
+            <h3>Façade Cost Consultancy</h3>
+            <p>
+              Commercial advice for fenestration systems, External Rainscreen
+              systems and complex cladding architectures.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">02</div>
+            <h3>Pre-Construction Estimating</h3>
+            <p>
+              Feasibility budgets and early-stage cost planning to guide
+              design evolution. Technical advice on what products and systems
+              suit project design and purpose.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">03</div>
+            <h3>Tender Support</h3>
+            <p>
+              Subcontractor pricing reviews and detailed commercial
+              comparisons. Assist with inclusions on early design stage to
+              avoid scope gaps when forming budgets.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">04</div>
+            <h3>Recladding & Remediation</h3>
+            <p>
+              Specialist cost planning for façade replacement and safety works
+              programmes.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">05</div>
+            <h3>Budget Cost Planning</h3>
+            <p>
+              Façade system benchmarking, value engineering, and detailed cost
+              modelling.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">06</div>
+            <h3>Scope Quantity/Item Take-Offs</h3>
+            <p>
+              ARC delivers detailed façade measurement and item schedules to
+              support accurate take-offs. By identifying elements often missed
+              during early estimating, we provide clear quantities and a
+              comprehensive façade component list.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">07</div>
+            <h3>ARC Façade Tender Proposal Pack</h3>
+            <p>
+              Includes: full take-off, item schedule, risk notes, value
+              engineering opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why ARC Section -->
+    <section id="why-arc" class="section why-section">
+      <div class="container grid-2-col reverse-mobile">
+        <div class="why-image image-reveal">
+          <img src="assets/IMG_6115.JPEG" alt="Architectural texture" />
+        </div>
+        <div class="why-text glass-panel">
+          <h2 class="section-title">The ARC Advantage</h2>
+          <ul class="feature-list">
+            <li>
+              <strong>Specialist Façade Expertise</strong>
+              <span>Deep technical knowledge of high-performance building
+                envelopes.</span>
+            </li>
+            <li>
+              <strong>Supply Chain Insight</strong>
+              <span>Strong understanding of global façade supply chains and
+                pricing structures.</span>
+            </li>
+            <li>
+              <strong>Independent Advice</strong>
+              <span>Objective, unbiased consultancy advice tailored to your
+                project.</span>
+            </li>
+            <li>
+              <strong>Pre-Construction Focus</strong>
+              <span>Dedicated to the stages where cost certainty and risk
+                mitigation are most valuable.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients-section bg-alt">
+      <div class="container text-center">
+        <h2 class="section-title">Who We Work With</h2>
+        <p class="max-w-m mx-auto">
+          ARC works with main contractors, architects, developers, project
+          managers, and design teams across commercial developments,
+          residential towers, and façade remediation programmes.
+        </p>
+        <div class="client-images">
+          <!-- We can use the remaining images here as a gallery or background aesthetic -->
+          <img src="assets/IMG_6129.JPEG" alt="Project 1" class="gallery-img" />
+          <img src="assets/IMG_6179.JPEG" alt="Project 2" class="gallery-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with HTMX -->
+    <section id="contact" class="section contact-section">
+      <div class="container grid-2-col">
+        <div class="contact-info glass-panel">
+          <h2 class="section-title">Discuss Your Project</h2>
+          <p>
+            Get in touch to learn how our specialist façade consultancy can
+            add value to your next development.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:info@aetherridgen.com" class="contact-link">info@aetherridgen.com</a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form id="contact-form" onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company Name" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span class="btn-text">Open in Mail Client</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <span style="font-weight: 700; color: white">ARC</span>
+      </div>
+      <div class="footer-links">
+        <p>&copy; 2026 Aether Rigden Consultants Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple observer for scroll animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".image-reveal, .service-card, .feature-list li")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // Removed HTMX mock listener. Forms will route via Formspree or similar.
+
+      window.sendEmail = function (e) {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const company = document.getElementById("company").value;
+        const message = document.getElementById("message").value;
+
+        const subject = encodeURIComponent(
+          `New Enquiry from ${name} ${company ? "(" + company + ")" : ""}`,
+        );
+        const body = encodeURIComponent(
+          `Name: ${name}\nCompany: ${company}\n\nMessage:\n${message}`,
         );
 
-        document
-          .querySelectorAll(".image-reveal, .service-card, .feature-list li")
-          .forEach((el) => {
-            observer.observe(el);
-          });
+        window.location.href = `mailto:info@aetherridgen.com?subject=${subject}&body=${body}`;
+      };
 
-        // Removed HTMX mock listener. Forms will route via Formspree or similar.
+      // Mobile Menu Toggle
+      window.toggleMobileMenu = function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("menu-open");
 
-        window.sendEmail = function (e) {
-          e.preventDefault();
-          const name = document.getElementById("name").value;
-          const company = document.getElementById("company").value;
-          const message = document.getElementById("message").value;
+        // Prevent scrolling when menu is open
+        if (header.classList.contains("menu-open")) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+      };
+    });
+  </script>
+</body>
 
-          const subject = encodeURIComponent(
-            `New Enquiry from ${name} ${company ? "(" + company + ")" : ""}`,
-          );
-          const body = encodeURIComponent(
-            `Name: ${name}\nCompany: ${company}\n\nMessage:\n${message}`,
-          );
-
-          window.location.href = `mailto:info@aetherridgen.uk?subject=${subject}&body=${body}`;
-        };
-
-        // Mobile Menu Toggle
-        window.toggleMobileMenu = function () {
-          const header = document.querySelector("header");
-          header.classList.toggle("menu-open");
-
-          // Prevent scrolling when menu is open
-          if (header.classList.contains("menu-open")) {
-            document.body.style.overflow = "hidden";
-          } else {
-            document.body.style.overflow = "";
-          }
-        };
-      });
-    </script>
-  </body>
 </html>
